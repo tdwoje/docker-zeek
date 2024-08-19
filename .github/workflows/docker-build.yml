@@ -85,6 +85,7 @@ jobs:
           push: true
           cache-from: type=registry,ref=${{ env.REGISTRY_IMAGE }}:buildcache-${{ matrix.version }}-${{ matrix.arch }}
           cache-to: type=registry,ref=${{ env.REGISTRY_IMAGE }}:buildcache-${{ matrix.version }}-${{ matrix.arch }},mode=max
+          no-cache-filters: final
 
       
       - name: Export digest

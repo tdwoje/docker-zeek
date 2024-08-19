@@ -62,7 +62,7 @@ RUN echo "===> Size of the Zeek install..." \
     && du -sh /usr/local/zeek
 
 ####################################################################################################
-FROM alpine
+FROM alpine AS final
 
 # python3 & bash are needed for zeekctl scripts
 # ethtool is needed to manage interface features
