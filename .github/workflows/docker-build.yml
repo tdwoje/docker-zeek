@@ -34,7 +34,7 @@ jobs:
             runner: ubuntu-arm-l
           - platform: linux/arm/v7
             arch: armv7
-            runner: ubuntu-arm-l-2
+            runner: ubuntu-large-2
           - version: "6.2.1"
             zkg: "3.0.1"
             release-tag: latest
